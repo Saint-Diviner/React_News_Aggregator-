@@ -1,0 +1,9 @@
+var mongoose = require('mongoose')
+
+FeedScheema = new mongoose.Schema({
+	name: {type: String, default: ''},
+	url: {type: String, default: ''},
+	timestamp: {type: Date, default: Date.now}
+})
+
+module.exports = mongoose.model('FeedScheema', FeedScheema)
